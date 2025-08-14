@@ -1,0 +1,4 @@
+FROM debian:latest
+RUN apt update && apt install -y
+WORKDIR /home/
+RUN apt install john -y
