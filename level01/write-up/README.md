@@ -45,7 +45,7 @@ I basicly run a debian docker image within I create a file with my hashed passwo
 echo <hash password> > hash.txt
 ```
 
-Then I run:
+Then I run (You can find the john documentation [here](https://www.varonis.com/blog/john-the-ripper)):
 ```bash
 ./john --show <path/to/hash.txt>
 ```
