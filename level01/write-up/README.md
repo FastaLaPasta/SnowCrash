@@ -18,7 +18,7 @@ I know i'm looking for a file within there is my flag, it can be located inside 
 nmap
 ```
 
-It result by a **command not found** so i'm pretty (we could have put a dot here) sure I have to find it directly on the machine.
+It result by a **command not found** so i'm pretty (we could end the sentence here) sure I have to find it directly on the machine.
 
 ---
 
