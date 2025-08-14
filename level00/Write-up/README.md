@@ -51,4 +51,12 @@ I find 2 of them then look into one of these by:
 cat /usr/bin/john
 ```
 
-FLAG FOUNDED
+**FLAG FOUNDED**
+
+IT DOESN'T WORK !! Oh lord.
+---
+
+We just need to decrypt it on [decrypter](https://www.dcode.fr/chiffre-cesar)
+
+
+## And we're done !
