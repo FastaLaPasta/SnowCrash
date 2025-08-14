@@ -1,15 +1,23 @@
-WRITE UP
+# WRITE UP
 
-Box:            SnowCrash
-Name:           Level00
-Description:    Find the flag to connect to level01
-Category:       Cryptographie
-Difficulty:     Easy
+**Box**:            SnowCrash
+
+**Name**:           Level00
+
+**Description**:    Find the flag to connect to level01
+
+**Category**:       Cryptographie
+
+**Difficulty**:     Easy
+
+---
 
 At first I don't really know what I'm looking for, after some researche i've figured that flag can be found in files or in specific services we can access thanks to open ports.
 
 So I basicly run
+```bash
 nmap 
+```
 It result in a command not found, so i start looking for files.
 
 ```bash
@@ -23,9 +31,9 @@ and
 grep -R "password" <directory>
 ```
 
-I then face several permission denied with a lot of file and directory (to much)
+But I faced several permission denied with a lot of file and directory (to much)
 
-So I've tried to look for the user
+So I've tried to look for the users
 
 ```bash
 cat /etc/passwd/
