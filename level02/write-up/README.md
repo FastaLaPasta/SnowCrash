@@ -2,7 +2,7 @@
 
 **Box**:            SnowCrash
 
-**Name**:           Level01
+**Name**:           Level02
 
 **Description**:    Find the flag to connect to level01
 
