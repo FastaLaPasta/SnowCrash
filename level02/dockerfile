@@ -1,0 +1,5 @@
+FROM debian:latest
+RUN apt update
+WORKDIR /home/
+COPY level02.pcap .
+RUN apt install -y tshark
