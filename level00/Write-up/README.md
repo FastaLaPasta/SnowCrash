@@ -42,13 +42,13 @@ cat /etc/passwd/
 I then see that there is a flag00 User so i look if I could find some file own by this user (flag00)
 
 ```bash
-find / -user flag00 2>/dev/null/
+find / -user flag00 2>/dev/null
 ```
 
 I find 2 of them then look into one of these by:
 
 ```bash
-cat /usr/bin/john
+cat /usr/sbin/john
 ```
 
 **FLAG FOUNDED**
