@@ -47,7 +47,8 @@ echo <hash password> > hash.txt
 
 Then I run (You can find the john documentation [here](https://www.varonis.com/blog/john-the-ripper)):
 ```bash
-./john --show <path/to/hash.txt>
+john hash.txt
+john --show <path/to/hash.txt>
 ```
 
 And YEAAAAAH it gives me something.
