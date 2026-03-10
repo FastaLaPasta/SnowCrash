@@ -48,7 +48,7 @@ As the executable do the command with the sudo permission, If I can use it to ru
 
 I create a fake **echo** file in wich there is:
 ```bash
-/bin/sh -c 'getflag'
+echo "/bin/sh -c 'getflag'" > /tmp/echo && chmod +x /tmp/echo
 ```
 
 Then place the path of it before the path of the actual echo by running:
