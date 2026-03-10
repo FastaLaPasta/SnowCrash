@@ -22,7 +22,7 @@ A file has been found. **level04.pl**
 
 ## Breaking Badly the box (Got it ?)
 
-It's a perl script, that allow us to curl the response of it ty to 
+It's a perl script, that allow us to curl the response of it thanks to 
 ```bash
 curl localhost:4747
 ```
