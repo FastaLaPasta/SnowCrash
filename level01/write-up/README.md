@@ -4,7 +4,7 @@
 
 **Name**:           Level01
 
-**Description**:    Find the flag to connect to level01
+**Description**:    Find the flag to connect to level02
 
 **Category**:       Cryptographie
 
@@ -40,7 +40,7 @@ It recommended me to try **Base_58** but it gives nothing relevant.
 
 After some research i've found that password can be stocked **hashed**, so if I have the right key I can find the right password. But it would take at least hundreds of tries. So let's use a specific tools for that **john**.
 
-I basicly run a debian docker image within I create a file with my hashed password (and install john)
+I basicly run a debian docker image within I create a file with my hashed password (and install john) and copy at the root of the container my hash password:
 ```bash
 echo <hash password> > hash.txt
 ```
