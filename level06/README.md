@@ -1,13 +1,13 @@
 # Level06
 
 **Box**: SnowCrash
+
+
 **Name**: Level06
+
 **Category**: Code Execution / PHP  
+
 **Difficulty**: Easy  
-
-## Overview
-
-Find the flag to connect to level07.
 
 ## Analysis
 
