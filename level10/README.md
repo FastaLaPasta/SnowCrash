@@ -20,7 +20,7 @@ I find a binary `level10` and a file `token`. The objective is to read the token
 
 I first try to run the binary, it ask for a file and a host. I have no right on token file, and with my own file i still don't have a host.
 
-After decompiling the binary (e.g., with Ghidra), I observe the following behavior:
+After decompiling the binary with my [decompiler](https://dogbolt.org), I observe the following behavior:
 
 The program accepts two arguments:
 - a file path
