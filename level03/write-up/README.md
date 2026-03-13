@@ -39,7 +39,7 @@ return
 I sadly can't just read the file because it already have been compiled! Then i get it on my own computer by running:
 
 ```bash
-scp -p 4242 level03@<ip>:level03 ~/Desktop
+scp -P 4242 level03@<ip>:level03 ~/Desktop
 ```
 I usually would use Ghidra, but thanks to permission issues I would rather use __https://dogbolt.org__
 

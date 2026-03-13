@@ -108,6 +108,10 @@ echo ; /bin/getflag > /tmp/flag | sha1sum
 
 The `/bin/getflag` command executes with the program's permissions and displays the password for the next level.
 
+```bash
+cat /tmp/flag
+```
+
 ## Conclusion
 
 The program is vulnerable because it constructs a shell command with user input:

@@ -43,6 +43,7 @@ decoded[i] = encoded[i] - i
 So I retrieve the token file with:
 ```bash
 scp -P 4242 level09@10.13.250.191:token ~/Desktop/
+chmod 777 ~/Desktop/token
 ```
 Write a Python script to decode the token file:
 

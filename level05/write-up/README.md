@@ -41,8 +41,7 @@ done
 So I run:
 
 ```bash
-echo '/bin/getflag > /tmp/key.txt' > /opt/openarenaserver/script.sh
-chmod +x /opt/openarenaserver/script.sh
+echo '/bin/getflag > /tmp/key.txt' > /opt/openarenaserver/script.sh && chmod +x /opt/openarenaserver/script.sh
 ```
 
 Just wait for the crontab to execute the first script (the one that run all the others).
