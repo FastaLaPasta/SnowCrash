@@ -20,16 +20,20 @@ ls
 Oh lord there is a **.pcap** file. (a packet analyzer)
 I can only read it, and it's a real mess innit. So i get it into my own computer by running:
 ```bash
-scp -P 4242 level02@10.12.237.184:level02.pcap ~/Desktop/
+scp -P 4242 level02@IPVM:level02.pcap level02/
+chmod 666 level02/level02.pcap
 ```
 
 I want to use wireshark (a powerful tool that allow to easly analyze packet in a friendly way) because of it's wonderful UI but because of permission issues, I rather use tshark (less friendly) inside a docker to extract potential data.
 
-(Can run my dockerfile with: **docker build -t tshark . && docker run -it tshark)
+Can run my dockerfile with: 
+```bash
+docker build -t tshark . && docker run -it tshark
+```
 
 Inside of it I first try to read the file:
 ```bash
-tshark -r level02.pcap -z follow,tcp,ascii,0'
+tshark -r level02.pcap -z follow,tcp,ascii,0
 ```
 
 This way I can see the content from tcp, in ascii format. And I notice a password !!!

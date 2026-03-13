@@ -40,15 +40,22 @@ It recommended me to try **Base_58** but it gives nothing relevant.
 
 After some research i've found that password can be stocked **hashed**, so if I have the right key I can find the right password. But it would take at least hundreds of tries. So let's use a specific tools for that **john**.
 
-I basicly run a debian docker image within I create a file with my hashed password (and install john) and copy at the root of the container my hash password:
+I basicly run a debian docker image within:
+```bash
+docker build -t john . && docker run -it john
+```
+
+I create a file with my hashed password (and install john) and copy at the root of the container my hash password:
 ```bash
 echo <hash password> > hash.txt
 ```
-
+```bash
+echo "flag01:42hDRfypTqqnw" > hash.txt
+```
 Then I run (You can find the john documentation [here](https://www.varonis.com/blog/john-the-ripper)):
 ```bash
 john hash.txt
-john --show <path/to/hash.txt>
+john --show hash.txt
 ```
 
 And YEAAAAAH it gives me something.

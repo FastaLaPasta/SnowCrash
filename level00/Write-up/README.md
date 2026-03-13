@@ -36,7 +36,7 @@ But I faced several permission denied with a lot of file and directory (to much)
 So I've tried to look for the users
 
 ```bash
-cat /etc/passwd/
+cat /etc/passwd
 ```
 
 I then see that there is a flag00 User so i look if I could find some file own by this user (flag00)
